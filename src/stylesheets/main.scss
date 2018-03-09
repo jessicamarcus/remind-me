@@ -1,0 +1,28 @@
+@import 'globals';
+@import 'resets';
+@import 'layout';
+
+body {
+  font: {
+    family: 'Roboto', sans-serif;
+    size: 24px;
+  }
+
+  > div {
+    padding: var(--item-spacing);
+  }
+}
+
+h1 {
+  display: inline-block;
+  margin-top: var(--item-spacing);
+  margin-left: calc(-1 * var(--item-spacing));
+  margin-bottom: 0;
+  padding-left: var(--item-spacing);
+  padding-right: calc(2 * var(--item-spacing));
+  background-color: var(--color-white-true);
+  font: {
+    weight: 300;
+    size: 1.6em;
+  }
+}

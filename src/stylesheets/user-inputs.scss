@@ -1,0 +1,32 @@
+input, select {
+  font: inherit;
+  border-radius: 0;
+
+  border: 2px solid var(--color-border);
+  background-color: var(--color-white);
+}
+
+input {
+  margin-top: calc(2 * var(--item-spacing));
+}
+
+.select-delay {
+  position: relative;
+  margin-top: var(--item-spacing);
+}
+
+.select-delay div::after {
+  pointer-events: none;
+  content: '';
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+
+  position: absolute;
+  right: calc(var(--standard-padding) * 3);
+  top: calc(var(--item-height) / 4);
+
+  transform: rotate(45deg);
+  border-right: 3px solid var(--color-main);
+  border-bottom: 3px solid var(--color-main);
+}

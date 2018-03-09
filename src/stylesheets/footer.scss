@@ -1,0 +1,45 @@
+footer {
+  margin-top: auto;
+
+  @media screen and (min-height: 1200px) {
+    margin-top: var(--item-spacing);
+  }
+
+  button {
+    text-transform: uppercase;
+    font-variant-caps: all-small-caps;
+    font-feature-settings: 'c2sc', 'smcp';
+
+    background-color: var(--color-border);
+    color: var(--color-white);
+
+    transition: opacity 0.15s;
+
+    &:focus {
+      outline-color: var(--color-white);
+    }
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.7;
+    }
+  }
+}
+
+aside {
+  font-size: 20px;
+  background-color: var(--color-white-true);
+  padding: var(--item-spacing);
+
+  h2 {
+    margin: 0;
+    font: {
+      weight: 400;
+      size: 1.25em;
+    }
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}

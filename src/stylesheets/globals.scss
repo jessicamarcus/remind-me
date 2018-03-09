@@ -1,0 +1,20 @@
+:root {
+  --color-main: #000;
+  --color-border: #333;
+  --color-white: rgba(255, 255, 255, 0.9);
+  --color-white-true: #fff;
+  --standard-padding: 0.25rem;
+  --item-spacing: calc(var(--standard-padding) * 4);
+  --item-height: 50px;
+}
+
+:focus {
+  outline-color: var(--color-main);
+}
+
+input, button, select {
+  display: block;
+  padding: var(--standard-padding) calc(var(--standard-padding) * 2);
+  width: 100%;
+  height: var(--item-height);
+}
